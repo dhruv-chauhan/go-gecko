@@ -111,7 +111,7 @@ type MarketDataItem struct {
 	CirculatingSupply                      float64           `json:"circulating_supply"`
 	Sparkline                              *SparklineItem    `json:"sparkline_7d"`
 	LastUpdated                            string            `json:"last_updated"`
-	FullyDilutedValuation                  interface{}       `json:"fully_diluted_valuation"`
+	FullyDilutedValuation                  AllCurrencies     `json:"fully_diluted_valuation"`
 	MaxSupply                              *float64          `json:"max_supply"`
 }
 
